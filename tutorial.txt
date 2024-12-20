@@ -1,0 +1,61 @@
+import { useEffect, useState } from 'react';
+import './App.css';
+
+const Person = (props) => {
+  return (
+    <>
+      Name: {props.name} <br />
+      Last Name: {props.lname}<br />
+      Age: 30<br />
+      <br />
+    </>
+  )
+}
+
+const Counter = () => {
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => { //effects when page reloads 
+    // setCounter(100);
+    alert("Counter Changed"); //will be called whenever counter changes
+  }, [counter] //dependency array )
+  
+  return (
+    <div className='Counter'>
+      <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
+      <h1>{counter}</h1>
+      <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
+    </div>
+  )
+}
+
+const App = () => {
+  const name = 'Saumya';
+  const isNameDefined = true;
+
+  return (
+    <div className="App">
+      <Counter />
+
+      <Person name={'Shruti'} lname={'Shahi'} />
+      <Person />
+
+      <h1> Hello, {isNameDefined ? name : 'NameLess'}! </h1>
+      {name ? (
+        <>
+          test {name}
+        </>
+      ) : (
+        <>
+          <h2>test</h2>
+          <h1>There is no name? </h1>
+        </>
+
+      )}
+
+
+    </div>
+  );
+}
+
+export default App;
