@@ -61,7 +61,7 @@ Follow these steps to run the CineVerse project locally:
 
 ## Screenshots
 
-![Homepage](path_to_screenshot)
+![Homepage](https://github.com/saumyashahi/Cineverse/blob/main/Screenshot%202024-12-20%20205810.png)
 _A sleek and modern homepage of CineVerse._
 
 ---
