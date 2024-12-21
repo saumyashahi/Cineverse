@@ -82,8 +82,10 @@ The primary goal of CineVerse was to:
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
---->
+
 ---
+--->
+
 
 ## Acknowledgments
 
